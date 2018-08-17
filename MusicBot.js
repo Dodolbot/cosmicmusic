@@ -277,7 +277,7 @@ function play(guild, song) {
 client.on("ready", async () => {
 
     function randomStatus() {
-        let status = [`📯 Music Bot | gm.play`,]
+        let status = [`📯 Music Bot | d!play`,]
           let rstatus = Math.floor(Math.random() * status.length);
         client.user.setActivity(status[rstatus], {type: 'STREAMING', url: "https://www.twitch.tv/verterid"});
     }; setInterval(randomStatus, 20000)
